@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Roua</title>
+   <style>
+  .image-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.image-with-text img {
+    flex: 0 0 auto;
+    margin-right: 100px; 
+}
+
+.image-with-text .text {
+    flex: 2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1812px;
+    height: 360px;
+    position: relative;
+    background: white;
+}
+
+.get-in-touch {
+    position: absolute;
+    left: 435px;
+    top: 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links {
+    position: absolute;
+    left: 963px;
+    top: 78px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    color: #007BFF;
+    font-size: 21px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10px;
+    word-wrap: break-word;
+}
+
+.contact-info,
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item,
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    padding-bottom: 1.19px;
+    padding-left: 1.19px;
+    background: #00A9FF;
+}
+
+.info,
+.link {
+    color: #737373;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20px;
+    word-wrap: break-word;
+}
+
+
+body {
+    font-family: "Urbanist", sans-serif;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background: #3371EB;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: white;
+    border-radius: 50%;
+}
+.container {
+  width: 1812px;
+  height: 360px;
+  position: relative;
+  background: white;
+}
+
+.contact-info {
+  position: absolute;
+  left: 981px;
+  top: 78px;
+}
+
+.links {
+  position: absolute;
+  left: 435px;
+  top: 68px;
+}
+
+.title {
+  color: #007BFF;
+  font-size: 21px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10px;
+  word-wrap: break-word;
+}
+
+.info-items,
+.link-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item,
+.link-item {
+  color: #737373;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20px;
+  word-wrap: break-word;
+}
+
+
+.inner-circle {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: white;
+    border: 1px solid white;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    font-size: 21px;
+    cursor: pointer;
+}
+.custom-div {
+    color: #007BFF;
+    font-size: 27px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10px;
+    word-wrap: break-word;
+}
+
+
+.create-account-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    padding: 20px;
+}
+
+.contact-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.button-text {
+  color: white;
+  font-size: 18px;
+  font-family: Urbanist;
+  font-weight: 600;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    background: #00A9FF;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+   </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+          
+            <div class="title" style="color: #676767">Cabinet Roua</div>
+        </div>
+      <nav class="navbar">
+        <ul>
+            <li><a href="http://localhost:8041/userhome">Home</a></li>
+            <li><a href="http://localhost:8041/appointments/new">Appointment</a></li>
+            <li><a href="http://localhost:8041/formulaire/ajouter">Avis</a></li>
+          
+        </ul>
+    </nav>
+        <div style="width: 206px; height: 49px; padding-left: 40px; padding-right: 40px; padding-top: 18px; padding-bottom: 18px; background: #007BFF; border-radius: 30px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+            <a href="connexion.html" style="color: white; font-size: 18px; font-family: Urbanist; font-weight: 600; line-height: 24px; word-wrap: break-word; text-decoration: none;">Create Account</a>
+
+          </div>
+    </div>
+
+    <div class="image-with-text">
+      <img style="width: 629px; height: 587px" src="C:\Users\MSI\Documents\9aa45fb3f21a83588416adc03cbbb655 (1).jpg" />
+
+      <div class="text">
+          <span style="color: #00A9FF; font-size: 32px; font-family: Urbanist; font-weight: 700; line-height: 80px; word-wrap: break-word">Welcome to Cabinet Roua, your premier healthcare<br/></span>
+          <span style="color: black; font-size: 32px; font-family: Urbanist; font-weight: 700; line-height: 80px; word-wrap: break-word">destination in Nabeul, Bir Chalouf. <br/>Our dedicated team offers a comprehensive range of medical services, from routine check-ups to specialized treatments, all delivered with exceptional care and compassion. <br/></span>
+      </div>
+  </div>
+  
+  <div class="container">
+    <div class="contact-info">
+        <div class="custom-div">
+            Get In Touch</div>
+      
+      <div class="info-items">
+        <div class="info-item">53380501</div>
+        <div class="info-item">Bir chalouf Nabeul</div>
+        <div class="info-item">khadharroua4@gmail.com</div>
+      </div>
+    </div>
+    <div class="links">
+        <div class="custom-div">Links</div>
+
+      <div class="link-items">
+        <div class="link-item"><a href="http://localhost:8041/categories/list"></a>home </div>
+        <div class="link-item"><a href="Appoitment.html"style="color: #737373;  text-decoration: none;">Appointment</a></div>
+        <div class="link-item"><a href="aboutus.html" style="color: #737373; text-decoration: none;">About us</a></div>
+        <div class="link-item"><a href="loginuser.html" style="color:#737373; text-decoration: none; ">Login</a></div>
+          
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

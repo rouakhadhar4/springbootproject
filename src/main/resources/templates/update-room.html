@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Room</title>
+</head>
+<body>
+    <h2>Update Room</h2>
+    <form th:action="@{/rooms/update}" method="post" th:object="${room}" enctype="multipart/form-data">
+        <!-- Champ de formulaire caché pour l'ID de la chambre -->
+        <input type="hidden" th:field="*{id}"/>
+        
+        <!-- Champ de formulaire pour le nom de la chambre -->
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" required/><br/>
+        
+        <!-- Champ de formulaire pour le type de la chambre -->
+        <label>Type:</label>
+        <input type="text" th:field="*{type}"/><br/>
+        
+        <!-- Champ de formulaire pour la description de la chambre -->
+        <label>Description:</label>
+        <textarea th:field="*{description}"></textarea><br/>
+        
+        <!-- Champ de formulaire pour le prix de la chambre -->
+        <label>Price:</label>
+        <input type="number" step="0.01" th:field="*{price}" required/><br/>
+        
+        <!-- Champ de formulaire pour le nombre de lits dans la chambre -->
+        <label>Number of Beds:</label>
+        <input type="number" th:field="*{numBeds}" required/><br/>
+        
+        <!-- Champ de formulaire pour le fichier image de la chambre -->
+        <label>Image:</label>
+        <input type="file" name="imageFile" accept="/projectspring_projectspring/images"/><br/>
+        
+        <!-- Champ de formulaire pour l'état de la chambre -->
+        <label>State:</label>
+        <input type="text" th:field="*{state}" required/><br/>
+        
+        <!-- Champ de formulaire pour la catégorie de la chambre -->
+        <label>Category:</label>
+        <select th:field="*{category}" required>
+            <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
+        </select><br/>
+        
+        <!-- Bouton de soumission du formulaire -->
+        <button type="submit">Update Room</button>
+    </form>
+</body>
+</html>

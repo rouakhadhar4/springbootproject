@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar et Footer</title>
+  <style>
+    /* Reset de la marge et du padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .footer-content {
+            background-color: #D8BFD8;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .footer-content .left,
+        .footer-content .center,
+        .footer-content .right {
+            flex: 1;
+        }
+        .footer-content .center {
+            text-align: center;
+        }
+        .footer-content .right {
+            text-align: right;
+        }
+
+    /* Styles pour la navbar */
+    .navbar {
+      background-color: #D8BFD8;;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #555;
+    }
+
+    /* Styles pour le contenu principal */
+    .content {
+      padding: 20px;
+      padding-bottom: 100px; /* Ajouté pour garantir que le contenu ne soit pas caché par le footer */
+      padding-top: 60px; /* Ajouté pour éviter que le contenu ne soit caché par la navbar */
+    }
+
+    /* Styles pour le pied de page */
+    .footer-content {
+      text-align: center;
+      padding: 20px;
+      background-color: #D8BFD8; /* Changement de couleur en noir */
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+   <nav class="navbar">
+        <ul>
+            <li><a href="http://localhost:8041/userhome">Home</a></li>
+            <li><a href="http://localhost:8041/appointments/new">Appointment</a></li>
+            <li><a href="http://localhost:8041/formulaire/ajouter">Avis</a></li>
+          
+        </ul>
+    </nav>
+  <div class="content">
+    <div class="text">
+          <span style="color: #D8BFD8; font-size: 32px; font-family: Urbanist; font-weight: 700; line-height: 80px; word-wrap: break-word">Welcome to Cabinet Roua, your premier healthcare<br/></span>
+          <span style="color: black; font-size: 32px; font-family: Urbanist; font-weight: 700; line-height: 80px; word-wrap: break-word">destination in Nabeul, Bir Chalouf. <br/>Our dedicated team offers a comprehensive range of medical services, from routine check-ups to specialized treatments, all delivered with exceptional care and compassion. <br/></span>
+   <footer class="footer-content">
+        <div class="left">Cabinet Khadhar Roua, Bir Chalouf Nabeul</div>
+        <div class="center">Téléphone: 53380501</div>
+        <div class="right">Email: khadharoua4@gmail.com</div>
+    </footer>
+</body>
+</html>
